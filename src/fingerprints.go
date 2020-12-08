@@ -8,9 +8,9 @@ type Fingerprint struct {
 	documentation string
 }
 
-func Fingerprints() [22]Fingerprint {
+func Fingerprints() [23]Fingerprint {
 
-	var fingerprints [22]Fingerprint
+	var fingerprints [23]Fingerprint
 
 	fingerprints[0] = Fingerprint{
 		"AWS/S3",
@@ -186,6 +186,14 @@ func Fingerprints() [22]Fingerprint {
 		"Help Center Closed",
 		"https://github.com/EdOverflow/can-i-take-over-xyz/issues/23",
 		"https://support.zendesk.com/hc/en-us/articles/203664356-Changing-the-address-of-your-Help-Center-subdomain-host-mapping-",
+	}
+	
+	fingerprints[22] = Fingerprint{
+		"Uberflip",
+		"Vulnerable",
+		"The URL you've accessed does not provide a hub",
+		"https://github.com/EdOverflow/can-i-take-over-xyz/issues/150",
+		"https://help.uberflip.com/hc/en-us/articles/360018786372-Custom-Domain-Set-up-Your-Hub-on-a-Subdomain",
 	}
 
 	return fingerprints
